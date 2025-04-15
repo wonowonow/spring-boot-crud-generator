@@ -453,7 +453,15 @@ def process_with_animation(total_steps):
         time.sleep(0.3)  # 애니메이션 효과를 위한 지연
 
 def main():
-    if len(sys.argv) != 2 or sys.argv[1] != "crud":
+    # 명령행에서 직접 호출될 때와 pip로 설치 후 spring-crud로 호출될 때 모두 동작하도록 수정
+    if len(sys.argv) > 1 and sys.argv[1] == "crud":
+        # crud 인자가 있으면 기존 방식대로 작동
+        pass
+    elif len(sys.argv) == 1:
+        # pip로 설치 후 spring-crud로 실행될 때는 sys.argv가 ['crud.py']만 포함
+        # 이 경우 자동으로 crud 인자가 있는 것처럼 동작
+        sys.argv.append("crud")
+    else:
         print("사용법: python crud.py crud")
         return
 
