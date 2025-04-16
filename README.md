@@ -68,7 +68,7 @@ python crud.py crud
    - 아키텍처 (3-레이어 또는 헥사고날)
 3. 확인 후 코드가 자동으로 생성됩니다.
 
-## 생성되는 파일 구조
+## 생성되는 파일 구조 (Product / 3Layer 생성으로 가정)
 
 ```
 src/main/java/com/example/domain/Product/
