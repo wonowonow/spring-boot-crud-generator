@@ -112,7 +112,13 @@ src/main/java/com/example/domain/Product/
 
 - 좋은 아이디어가 있으신 분들은 Issue 나 PR 올려주셔서 기여해주시면 감사하겠습니다.
 
-### PR로 기여하기
+### 👥 Contributors
+
+- 이 프로젝트에 기여해주셔서 감사합니다!
+
+[![Contributors](https://contrib.rocks/image?repo=wonowonow/spring-boot-crud-generator)](https://github.com/wonowonow/spring-boot-crud-generator/graphs/contributors)
+
+## PR로 기여하기
 1. GitHub에서 리포지토리를 Fork한다.
 2. 내 깃허브 계정으로 복사된 포크 리포지토리를 git clone 한다.
 3. 브랜치 생성 후 작업, 커밋한다.
