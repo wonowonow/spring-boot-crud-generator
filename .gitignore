@@ -411,4 +411,11 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# setup
+setup.py
+
+# pipy
+spring-boot-crud-generator/**
+pipy-upload-guide.md
+
 # End of https://www.toptal.com/developers/gitignore/api/python,visualstudiocode,intellij+all,windows,macos,linux,pycharm+all
