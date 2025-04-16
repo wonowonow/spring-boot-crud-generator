@@ -1,13 +1,13 @@
 import sys
 import time
-from utils.input import get_input
-from utils.output import print_banner, print_step, print_finish, print_summary
-from utils.output import print_section
-from generator.entity import generate_entity
-from generator.dto import generate_dto
-from generator.repository import generate_repository
-from generator.service import generate_service_impl, generate_service_interface
-from generator.controller import generate_controller
+from springcrud.utils.input import get_input
+from springcrud.utils.output import print_banner, print_step, print_finish, print_summary
+from springcrud.utils.output import print_section
+from springcrud.generator.entity import generate_entity
+from springcrud.generator.dto import generate_dto
+from springcrud.generator.repository import generate_repository
+from springcrud.generator.service import generate_service_impl, generate_service_interface
+from springcrud.generator.controller import generate_controller
 
 def main():
     # 명령행 인자가 없거나 "crud"가 아닌 경우 안내
