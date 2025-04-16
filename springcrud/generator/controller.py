@@ -8,11 +8,11 @@ def generate_controller(base_package, name, java_version, architecture):
 
     if architecture == "hexagonal":
         # 인바운드 포트 어댑터 생성
-        path = f"src/main/java/{to_path(base_package)}/infrastructure/adapter/in/web"
+        path = f"src/main/java/{to_path(base_package)}/domain/{name}/infrastructure/adapter/in/web"
         make_dirs(path)
         file_path = f"{path}/{name}WebAdapter.java"
 
-        content = f"""package {base_package}.infrastructure.adapter.in.web;
+        content = f"""package {base_package}.domain.{name}.infrastructure.adapter.in.web;
 
 import {base_package}.domain.{name}.dto.*;
 import {base_package}.domain.{name}.port.in.Use{name}Port;

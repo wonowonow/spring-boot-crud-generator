@@ -22,10 +22,10 @@ public interface {name}Port {{
         write_file(port_file_path, port_content)
 
         # 어댑터 (구현체) 생성
-        adapter_path = f"src/main/java/{to_path(base_package)}/infrastructure/adapter/out/persistence"
+        adapter_path = f"src/main/java/{to_path(base_package)}/domain/{name}/infrastructure/adapter/out/persistence"
         make_dirs(adapter_path)
         adapter_file_path = f"{adapter_path}/{name}PersistenceAdapter.java"
-        adapter_content = f"""package {base_package}.infrastructure.adapter.out.persistence;
+        adapter_content = f"""package {base_package}.domain.{name}.infrastructure.adapter.out.persistence;
 
 import {base_package}.domain.{name}.domain.{name};
 import {base_package}.domain.{name}.port.out.{name}Port;
